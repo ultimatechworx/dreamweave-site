@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Dreamweave</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:      #1A1530;
+      --deep:     #120E2A;
+      --amber:    #FFB830;
+      --mist:     #8BB4D4;
+      --soft:     #F5F0FF;
+      --border:   rgba(255,255,255,0.08);
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--deep);
+      color: var(--soft);
+      line-height: 1.75;
+    }
+
+    nav {
+      background: rgba(18,14,42,0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-logo { color: var(--amber); font-weight: 800; font-size: 1.1rem; text-decoration: none; }
+    .nav-back  { color: var(--mist); font-size: 0.85rem; text-decoration: none; }
+    .nav-back:hover { color: var(--amber); }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    .doc-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+      margin-bottom: 48px;
+    }
+
+    .doc-header h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--amber);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .doc-header p {
+      color: var(--mist);
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--amber);
+      margin: 40px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(255,184,48,0.15);
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--soft);
+      margin: 24px 0 8px;
+    }
+
+    p {
+      font-size: 0.92rem;
+      color: rgba(245,240,255,0.82);
+      margin-bottom: 14px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      font-size: 0.92rem;
+      color: rgba(245,240,255,0.82);
+      margin-bottom: 6px;
+    }
+
+    a { color: var(--amber); text-decoration: underline; }
+    a:hover { opacity: 0.8; }
+
+    .highlight-box {
+      background: rgba(255,184,48,0.07);
+      border: 1px solid rgba(255,184,48,0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p { margin: 0; color: var(--soft); }
+
+    .toc {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+
+    .toc h3 {
+      color: var(--mist);
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .toc li {
+      font-size: 0.88rem;
+      margin-bottom: 4px;
+    }
+
+    .toc a { text-decoration: none; color: var(--mist); }
+    .toc a:hover { color: var(--amber); }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: rgba(255,255,255,0.3);
+      font-size: 0.8rem;
+    }
+
+    footer a { color: var(--mist); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">✦ Dreamweave</a>
+  <a href="/" class="nav-back">← Back to Home</a>
+</nav>
+
+<div class="page">
+
+  <div class="doc-header">
+    <h1>Terms of Use</h1>
+    <p>Last updated: April 2026 &nbsp;·&nbsp; Effective date: April 2026</p>
+  </div>
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#agreement">Agreement to Terms</a></li>
+      <li><a href="#description">Description of Service</a></li>
+      <li><a href="#accounts">User Accounts</a></li>
+      <li><a href="#subscriptions">Subscriptions and Payments</a></li>
+      <li><a href="#prohibited">Prohibited Activities</a></li>
+      <li><a href="#intellectual">Intellectual Property</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#ai">AI-Generated Content</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#disputes">Dispute Resolution</a></li>
+      <li><a href="#termination">13. Termination</a></li>
+      <li><a href="#governing">14. Governing Law</a></li>
+      <li><a href="#changes">15. Changes to Terms</a></li>
+      <li><a href="#userdata">16. User Data</a></li>
+      <li><a href="#electronic">17. Electronic Communications, Transactions, and Signatures</a></li>
+      <li><a href="#miscellaneous">18. Miscellaneous</a></li>
+      <li><a href="#contact">19. Contact Us</a></li>
+    </ol>
+  </div>
+
+  <div class="highlight-box">
+    <p>Please read these Terms of Use carefully before using Dreamweave. By creating an account or using the app, you agree to be bound by these Terms. If you do not agree, do not use the app.</p>
+  </div>
+
+  <!-- 1 -->
+  <h2 id="agreement">1. Agreement to Terms</h2>
+  <p>These Terms of Use ("Terms") constitute a legally binding agreement between you ("you" or "User") and <strong>Ultimate Techworx LLC</strong> ("Company", "we", "us", or "our") governing your access to and use of the Dreamweave mobile application ("App").</p>
+  <p>By downloading, installing, or using the App, you confirm that you are at least 18 years of age, that you have read and understood these Terms, and that you agree to be bound by them. If you are creating an account on behalf of a child, you represent that you are that child's parent or legal guardian.</p>
+
+  <!-- 2 -->
+  <h2 id="description">2. Description of Service</h2>
+  <p>Dreamweave is an AI-powered bedtime story mobile application designed for children aged 4–12. The App allows parents and guardians to generate personalized stories using AI technology, accompanied by AI-generated illustrations and voice narration. Features include:</p>
+  <ul>
+    <li>Three story creation modes: Alchemy Lab, Dream Jar, and Surprise Me</li>
+    <li>AI-generated 4-chapter stories tailored to the child's age group</li>
+    <li>AI-generated illustrations in multiple artistic styles</li>
+    <li>Text-to-speech narration with sentence highlighting</li>
+    <li>A personal story library stored on-device (cloud sync available for Premium subscribers)</li>
+  </ul>
+
+  <!-- 3 -->
+  <h2 id="accounts">3. User Accounts</h2>
+  <p>To access the full features of the App, you must create an account using a valid email address and password. You are responsible for:</p>
+  <ul>
+    <li>Maintaining the confidentiality of your account credentials</li>
+    <li>All activity that occurs under your account</li>
+    <li>Notifying us immediately of any unauthorized use of your account</li>
+  </ul>
+  <p>You may not sell, transfer, or assign your account to any other person. One account per household is recommended. We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+  <p>To update or delete your account, you may do so through the app's Settings screen or by contacting us at the email address listed in Section 16.</p>
+
+  <!-- 4 -->
+  <h2 id="subscriptions">4. Subscriptions and Payments</h2>
+
+  <h3>4.1 Subscription Plans</h3>
+  <p>Dreamweave offers the following subscription tiers:</p>
+  <ul>
+    <li><strong>Free:</strong> Limited access for new users to explore the app</li>
+    <li><strong>Basic:</strong> Unlimited story generation, AI illustrations (Standard quality), and narration</li>
+    <li><strong>Premium:</strong> All Basic features plus Enhanced AI illustrations and cross-device cloud sync</li>
+  </ul>
+
+  <h3>4.2 Billing</h3>
+  <p>Subscriptions are billed on a weekly basis through the Google Play Store or Apple App Store. All payments are processed by the respective app store platform. By subscribing, you authorize the app store to charge your payment method on a recurring basis until you cancel.</p>
+
+  <h3>4.3 Cancellation and Refunds</h3>
+  <p>You may cancel your subscription at any time through your Google Play or Apple App Store account settings. Cancellation takes effect at the end of the current billing period. Refund requests are handled in accordance with the Google Play or Apple App Store refund policies.</p>
+
+  <h3>4.4 Price Changes</h3>
+  <p>We reserve the right to change subscription prices. We will notify you of any price changes via email or in-app notification with reasonable advance notice.</p>
+
+  <!-- 5 -->
+  <h2 id="prohibited">5. Prohibited Activities</h2>
+  <p>You agree not to engage in any of the following activities:</p>
+  <ul>
+    <li>Sell, transfer, or assign your account or profile to any other person</li>
+    <li>Submit content that is harmful, offensive, violent, sexual, or otherwise inappropriate for children</li>
+    <li>Attempt to reverse engineer, decompile, copy, or reproduce any AI-generated content, app functionality, or proprietary technology within the App</li>
+    <li>Use the App for any commercial purpose without our prior written consent</li>
+    <li>Attempt to gain unauthorized access to any part of the App or its backend infrastructure</li>
+    <li>Use automated scripts, bots, or other tools to access or interact with the App</li>
+    <li>Violate any applicable local, national, or international laws or regulations</li>
+    <li>Impersonate any person or entity or misrepresent your affiliation with any person or entity</li>
+  </ul>
+
+  <!-- 6 -->
+  <h2 id="intellectual">6. Intellectual Property</h2>
+  <p>The App, including its design, code, branding, and all non-user-generated content, is owned by <strong>Ultimate Techworx LLC</strong> and is protected by intellectual property laws.</p>
+  <p>AI-generated stories and illustrations produced through the App are generated on your behalf for your personal, non-commercial use. You may not reproduce, distribute, or commercialize AI-generated content from the App without our written consent.</p>
+  <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
+
+  <!-- 7 -->
+  <h2 id="children">7. Children's Privacy</h2>
+  <p>Dreamweave is designed for use by children aged 4–12 under the supervision and account ownership of a parent or legal guardian. Accounts must be created by an adult (18+). By creating an account, you confirm that you are the parent or legal guardian of the child who will use the App.</p>
+  <p>We comply with the Children's Online Privacy Protection Act (COPPA) and applicable children's privacy laws. We do not knowingly collect personal information directly from children. Please review our <a href="/privacy-policy.html">Privacy Policy</a> for full details on data collection and use.</p>
+
+  <!-- 8 -->
+  <h2 id="ai">8. AI-Generated Content</h2>
+  <p>Stories, illustrations, and narration in Dreamweave are generated by artificial intelligence. While we implement content moderation and safety layers, AI-generated content may occasionally be imperfect. We do not guarantee that all AI-generated content will be completely accurate, appropriate, or error-free.</p>
+  <p>If you encounter content that you believe is inappropriate, please contact us immediately at the address in Section 16.</p>
+  <p>AI-generated content is produced for entertainment and educational purposes only and should not be relied upon as factual information.</p>
+
+  <!-- 9 -->
+  <h2 id="third-party">9. Third-Party Services and Links</h2>
+  <p>The App uses third-party AI and infrastructure services to deliver its features, including Anthropic, OpenAI, Black Forest Labs, Inworld, and Google Firebase. Your use of the App is subject to those providers' terms of service.</p>
+  <p>The App and our website may contain links to third-party websites, including the Google Play Store and Apple App Store. We are not responsible for the content, privacy practices, or terms of any third-party websites. Visiting linked websites is at your own risk.</p>
+
+  <!-- 10 -->
+  <h2 id="disclaimer">10. Disclaimer of Warranties</h2>
+  <p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+  <p>We do not warrant that the App will be uninterrupted, error-free, secure, or free of viruses. We do not warrant that AI-generated content will meet your expectations or requirements.</p>
+
+  <!-- 11 -->
+  <h2 id="liability">11. Limitation of Liability</h2>
+  <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL <strong>Ultimate Techworx LLC</strong> BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE APP.</p>
+  <p>Our total liability to you for any claims arising out of or related to these Terms or the App shall not exceed the greater of: (a) the total amount you paid to us in the three (3) months immediately preceding the event giving rise to the claim, or (b) one hundred dollars ($100).</p>
+  <p>Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages. In such jurisdictions, our liability is limited to the maximum extent permitted by law.</p>
+
+  <!-- 12 -->
+  <h2 id="disputes">12. Dispute Resolution</h2>
+
+  <h3>12.1 Informal Resolution</h3>
+  <p>Before initiating any formal dispute process, you agree to contact us at the email in Section 16 to attempt to resolve the dispute informally. We will work in good faith to resolve any issue within <strong>30 days</strong> of receiving your written notice.</p>
+
+  <h3>12.2 Binding Arbitration</h3>
+  <p>If informal resolution is unsuccessful, any dispute arising out of or relating to these Terms or the App shall be resolved by binding arbitration rather than in court, except that you may assert claims in small claims court if they qualify.</p>
+  <p>Arbitration shall be conducted by a recognized arbitration body under its applicable rules. The arbitration will be conducted in English. We will pay arbitration fees that are deemed excessive relative to what court filing fees would have been.</p>
+
+  <h3>12.3 Class Action Waiver</h3>
+  <p>You agree that any dispute resolution proceedings will be conducted only on an individual basis and not in a class, consolidated, or representative action.</p>
+
+  <h3>12.4 Time Limitation</h3>
+  <p>Any claim arising out of or relating to these Terms must be brought within <strong>one (1) year</strong> after the cause of action arises, or it will be permanently barred.</p>
+
+  <!-- 13 -->
+  <h2 id="termination">13. Termination</h2>
+  <p>We reserve the right to suspend or terminate your account and access to the App at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users, us, third parties, or the public.</p>
+  <p>Upon termination, your right to use the App will immediately cease. You may delete your account at any time through the app's Settings screen or by contacting us. Account deletion results in permanent removal of all your data from our systems.</p>
+
+  <!-- 14 -->
+  <h2 id="governing">14. Governing Law</h2>
+  <p>These Terms shall be governed by and construed in accordance with the laws of <strong>DuPage county, Illinoise, United State</strong>, without regard to its conflict of law provisions.</p>
+  <p>If any dispute proceeds in court rather than arbitration, you agree to submit to the personal jurisdiction of the courts located in <strong>DuPage county, Illinoise</strong>.</p>
+
+  <!-- 15 -->
+  <h2 id="changes">15. Changes to Terms</h2>
+  <p>We reserve the right to modify these Terms at any time. When we make material changes, we will notify you by email and/or by a prominent notice within the App at least 14 days before the changes take effect.</p>
+  <p>Your continued use of the App after the effective date of the revised Terms constitutes your acceptance of the changes. If you do not agree to the revised Terms, you must stop using the App.</p>
+
+  <!-- 16 -->
+  <h2 id="userdata">16. User Data</h2>
+  <p>We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.</p>
+
+  <!-- 17 -->
+  <h2 id="electronic">17. Electronic Communications, Transactions, and Signatures</h2>
+  <p>Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Services, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SERVICES. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.</p>
+
+  <!-- 18 -->
+  <h2 id="miscellaneous">18. Miscellaneous</h2>
+  <p>These Terms of Use and any policies or operating rules posted by us on the Services or in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms shall not operate as a waiver of such right or provision. These Terms operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms or use of the Services. You agree that these Terms will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms and the lack of signing by the parties hereto to execute these Terms.</p>
+
+  <!-- 19 -->
+  <h2 id="contact">19. Contact Us</h2>
+  <p>If you have any questions about these Terms of Use, please contact us at:</p>
+  <ul>
+    <li><strong>Company:</strong> Ultimate Techworx LLC</li>
+    <li><strong>Email:</strong> <a href="mailto:contact@ultimatex.ai">contact@ultimatex.ai</a></li>
+    <li><strong>Website:</strong> <a href="https://dreamweave.ultimatex.ai">dreamweave.ultimatex.ai</a></li>
+  </ul>
+
+</div>
+
+<footer>
+  <p>© 2026 Dreamweave · <a href="/privacy-policy.html">Privacy Policy</a> · <a href="/terms-of-use.html">Terms of Use</a></p>
+</footer>
+
+</body>
+</html>
