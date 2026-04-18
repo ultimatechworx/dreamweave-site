@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Request — Dreamweave</title>
+  <title>Data Request — Dreambean</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -236,7 +236,7 @@
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">✦ Dreamweave</a>
+  <a href="/" class="nav-logo">✦ Dreambean</a>
   <a href="/privacy-policy.html" class="nav-back">← Privacy Policy</a>
 </nav>
 
@@ -317,7 +317,7 @@
     <p>We've sent a confirmation to your email address.<br>We'll respond within 30 days.</p>
   </div>
 
-  <p class="note">Questions? Contact us at <a href="mailto:contact@ultimatex.ai" style="color:var(--mist)">contact@ultimatex.ai</a></p>
+  <p class="note">Questions? Contact us at <a href="mailto:contact@uthings.io" style="color:var(--mist)">contact@uthings.io</a></p>
 
 </div>
 
@@ -348,7 +348,7 @@
       return;
     }
 
-    const subject = encodeURIComponent(`Dreamweave Data Request — ${type}`);
+    const subject = encodeURIComponent(`Dreambean Data Request — ${type}`);
     const body = encodeURIComponent(
       `Data Request Type: ${type}\n` +
       `Name: ${name}\n` +
@@ -357,7 +357,7 @@
     );
 
     // Open user's email client with pre-filled request
-    window.location.href = `mailto:contact@ultimatex.ai?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@uthings.io?subject=${subject}&body=${body}`;
 
     // Show success card
     setTimeout(() => {
