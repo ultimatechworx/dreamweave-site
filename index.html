@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dreambean — AI Bedtime Stories for Kids</title>
-  <link rel="icon" href="/assets/dreambean-castle.svg" type="image/svg+xml" />
-  <link rel="shortcut icon" href="/assets/dreambean-castle.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="/assets/dreambean-castle.svg" />
-  <link rel="mask-icon" href="/assets/dreambean-castle.svg" color="#FFB830" />
+  <link rel="icon" href="assets/dreambean-castle.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="assets/dreambean-castle.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/dreambean-castle.svg" />
+  <link rel="mask-icon" href="assets/dreambean-castle.svg" color="#FFB830" />
   <style>
     /* ── Reset & base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -204,6 +204,27 @@
     .btn-secondary:hover {
       border-color: var(--amber);
       background: rgba(255,184,48,0.08);
+    }
+
+    .btn-play {
+      display: inline-flex;
+      align-items: center;
+      background: #111111;
+      padding: 8px 12px;
+      border-radius: 12px;
+      transition: transform .15s, box-shadow .2s;
+    }
+
+    .btn-play:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    }
+
+    .btn-play-icon {
+      width: 132px;
+      height: auto;
+      display: block;
+      flex: 0 0 auto;
     }
 
     /* Phone mockup */
@@ -808,7 +829,7 @@
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">
-      <img src="/assets/dreambean-castle.svg" alt="" class="nav-logo-icon" width="34" height="34">
+      <img src="assets/dreambean-castle.svg" alt="" class="nav-logo-icon" width="34" height="34">
       <span>Dreambean</span>
     </div>
     <ul class="nav-links">
@@ -836,6 +857,9 @@
           </a>
           <a href="#features" class="btn-secondary">
             Learn more →
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=ai.dreambean.app&amp;pcampaignid=web_share" class="btn-play" target="_blank" rel="noopener noreferrer">
+            <img src="assets/google-play-logo.svg" alt="Get it on Google Play" class="btn-play-icon" width="132" height="26">
           </a>
         </div>
       </div>
@@ -1109,8 +1133,8 @@
       <div class="footer-col">
         <h4>Legal</h4>
         <ul>
-          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="/terms-of-use.html">Terms of Use</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-use.html">Terms of Use</a></li>
           <li><a href="mailto:contact@uthings.io">Contact Us</a></li>
         </ul>
       </div>
