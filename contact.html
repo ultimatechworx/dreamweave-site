@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Dreambean</title>
+  <link rel="icon" href="assets/dreambean-castle.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="assets/dreambean-castle.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/dreambean-castle.svg" />
+  <link rel="mask-icon" href="assets/dreambean-castle.svg" color="#FFB830" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #1A1530;
+      --deep:   #120E2A;
+      --cave:   #1E1840;
+      --amber:  #FFB830;
+      --mist:   #8BB4D4;
+      --soft:   #F5F0FF;
+      --border: rgba(255,255,255,0.08);
+      --glass:  rgba(255,255,255,0.05);
+      --radius: 14px;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--deep);
+      color: var(--soft);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: rgba(18,14,42,0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-logo {
+      color: var(--amber);
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
+    .nav-back { color: var(--mist); font-size: 0.85rem; text-decoration: none; }
+    .nav-back:hover { color: var(--amber); }
+
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    .doc-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+      margin-bottom: 48px;
+    }
+
+    .doc-header h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--amber);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .doc-header p { color: var(--mist); font-size: 0.92rem; }
+
+    .form-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 36px 32px;
+    }
+
+    .field { margin-bottom: 22px; }
+
+    label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--mist);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .optional-tag {
+      font-weight: 400;
+      text-transform: none;
+      color: rgba(139,180,212,0.6);
+      font-size: 0.78rem;
+      letter-spacing: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--soft);
+      font-family: inherit;
+      font-size: 0.92rem;
+      transition: border-color .2s;
+      outline: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: rgba(255,184,48,0.5);
+    }
+
+    input::placeholder,
+    textarea::placeholder { color: rgba(245,240,255,0.3); }
+
+    textarea { resize: vertical; min-height: 140px; }
+
+    .field-error {
+      display: none;
+      color: #ff7070;
+      font-size: 0.8rem;
+      margin-top: 6px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: var(--amber);
+      color: var(--ink);
+      border: none;
+      border-radius: 30px;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background .2s, transform .15s;
+    }
+
+    .submit-btn:hover { background: #ffd060; transform: translateY(-1px); }
+    .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+    .success-card {
+      display: none;
+      text-align: center;
+      padding: 48px 32px;
+      background: var(--glass);
+      border: 1px solid rgba(255,184,48,0.2);
+      border-radius: 18px;
+    }
+
+    .success-icon { font-size: 3rem; margin-bottom: 16px; }
+
+    .success-card h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--amber);
+      margin-bottom: 12px;
+    }
+
+    .success-card p { color: var(--mist); font-size: 0.92rem; }
+
+    .note {
+      margin-top: 24px;
+      font-size: 0.82rem;
+      color: rgba(245,240,255,0.4);
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: rgba(255,255,255,0.3);
+      font-size: 0.8rem;
+    }
+
+    footer a { color: var(--mist); text-decoration: none; }
+
+    @media (max-width: 480px) {
+      .form-card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="assets/dreambean-castle.svg" alt="" class="nav-logo-icon" width="30" height="30">
+    <span>Dreambean</span>
+  </a>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+
+<div class="page">
+
+  <div class="doc-header">
+    <h1>Contact Us</h1>
+    <p>Have a question or feedback? We'd love to hear from you.</p>
+  </div>
+
+  <div class="form-card" id="formCard">
+    <form id="contactForm" novalidate>
+
+      <div class="field">
+        <label for="name">Name <span class="optional-tag">(optional)</span></label>
+        <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        <span class="field-error" id="emailError">Please enter a valid email address.</span>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+        <span class="field-error" id="messageError">Please enter a message.</span>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+
+    </form>
+  </div>
+
+  <div class="success-card" id="successCard">
+    <div class="success-icon">✦</div>
+    <h2>Message sent!</h2>
+    <p>Thanks for reaching out. We'll get back to you as soon as we can.</p>
+  </div>
+
+  <p class="note">Or email us directly at <a href="mailto:contact@uthings.io" style="color:var(--mist)">contact@uthings.io</a></p>
+
+</div>
+
+<footer>
+  <p>© 2026 Ultimate Things - Ultimate Techworx LLC · <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-use.html">Terms of Use</a></p>
+</footer>
+
+<script>
+  const emailInput   = document.getElementById('email');
+  const messageInput = document.getElementById('message');
+  const emailError   = document.getElementById('emailError');
+  const messageError = document.getElementById('messageError');
+
+  function isValidEmail(val) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+  }
+
+  emailInput.addEventListener('blur', () => {
+    const show = emailInput.value.trim() && !isValidEmail(emailInput.value.trim());
+    emailError.style.display = show ? 'block' : 'none';
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name    = document.getElementById('name').value.trim();
+    const email   = emailInput.value.trim();
+    const message = messageInput.value.trim();
+
+    let valid = true;
+
+    if (!email || !isValidEmail(email)) {
+      emailError.style.display = 'block';
+      emailInput.focus();
+      valid = false;
+    } else {
+      emailError.style.display = 'none';
+    }
+
+    if (!message) {
+      messageError.style.display = 'block';
+      if (valid) messageInput.focus();
+      valid = false;
+    } else {
+      messageError.style.display = 'none';
+    }
+
+    if (!valid) return;
+
+    const subject = encodeURIComponent('Dreambean — Contact Us');
+    const bodyLines = [];
+    if (name) bodyLines.push(`From: ${name}`);
+    bodyLines.push(`Reply-to: ${email}`, '', message);
+    const body = encodeURIComponent(bodyLines.join('\n'));
+
+    window.location.href = `mailto:contact@uthings.io?subject=${subject}&body=${body}`;
+
+    setTimeout(() => {
+      document.getElementById('formCard').style.display = 'none';
+      document.getElementById('successCard').style.display = 'block';
+    }, 500);
+  });
+</script>
+
+</body>
+</html>
